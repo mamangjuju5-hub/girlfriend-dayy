@@ -3,152 +3,150 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Happy Girlfriend Day ❤️</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    color: white;
-    overflow-x: hidden;
+body{
+    min-height:100vh;
+    font-family:Arial,sans-serif;
+    color:white;
+    overflow-x:hidden;
 
     background:
-        radial-gradient(circle at 20% 20%, #6d235f 0%, transparent 35%),
-        radial-gradient(circle at 80% 80%, #35145c 0%, transparent 35%),
-        linear-gradient(135deg, #120817, #210d29, #0b0610);
+    radial-gradient(circle at 20% 20%,#6d235f 0%,transparent 35%),
+    radial-gradient(circle at 80% 80%,#35145c 0%,transparent 35%),
+    linear-gradient(135deg,#120817,#210d29,#0b0610);
 }
 
-/* Background stars */
-.stars {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
 }
 
-.star {
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    background: white;
-    border-radius: 50%;
-    opacity: .7;
-    animation: twinkle 2s infinite alternate;
+.star{
+    position:absolute;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    opacity:.7;
+    animation:twinkle 2s infinite alternate;
 }
 
-@keyframes twinkle {
-    from { opacity: .2; }
-    to { opacity: 1; }
+@keyframes twinkle{
+    from{opacity:.2}
+    to{opacity:1}
 }
 
-/* Main */
-.wrapper {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
+.wrapper{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
 }
 
-.card {
-    width: 100%;
-    max-width: 520px;
-    padding: 42px 28px;
-    text-align: center;
+.card{
+    width:100%;
+    max-width:520px;
+    padding:42px 28px;
+    text-align:center;
 
-    background: rgba(255,255,255,.08);
-    border: 1px solid rgba(255,255,255,.15);
-    border-radius: 30px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:30px;
 
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
 
     box-shadow:
-        0 25px 80px rgba(0,0,0,.55),
-        inset 0 1px 1px rgba(255,255,255,.1);
+    0 25px 80px rgba(0,0,0,.55),
+    inset 0 1px 1px rgba(255,255,255,.1);
 
-    animation: cardIn 1.2s ease;
-    position: relative;
-    z-index: 2;
+    animation:cardIn 1.2s ease;
+    position:relative;
+    z-index:2;
 }
 
-@keyframes cardIn {
-    from {
-        opacity: 0;
-        transform: translateY(35px) scale(.95);
+@keyframes cardIn{
+    from{
+        opacity:0;
+        transform:translateY(35px) scale(.95);
     }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
     }
 }
 
-.label {
-    font-size: 12px;
-    letter-spacing: 4px;
-    color: #ffb6dd;
-    text-transform: uppercase;
+.label{
+    font-size:12px;
+    letter-spacing:4px;
+    color:#ffb6dd;
+    text-transform:uppercase;
 }
 
-h1 {
-    margin-top: 18px;
-    font-size: 43px;
-    line-height: 1.1;
+h1{
+    margin-top:18px;
+    font-size:43px;
+    line-height:1.1;
 
-    background: linear-gradient(
+    background:linear-gradient(
         90deg,
         #ffffff,
         #ff8bc9,
         #ffffff
     );
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
-.big-heart {
-    font-size: 70px;
-    margin: 22px 0;
+.big-heart{
+    font-size:70px;
+    margin:22px 0;
 
-    filter: drop-shadow(0 0 20px rgba(255,80,170,.5));
+    filter:drop-shadow(
+        0 0 20px rgba(255,80,170,.5)
+    );
 
-    animation: heartbeat 1.4s infinite;
+    animation:heartbeat 1.4s infinite;
 }
 
-@keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1);
+@keyframes heartbeat{
+    0%,100%{
+        transform:scale(1);
     }
-
-    50% {
-        transform: scale(1.15);
+    50%{
+        transform:scale(1.15);
     }
 }
 
-.message {
-    color: #f8eaf3;
-    font-size: 16px;
-    line-height: 1.9;
+.message{
+    color:#f8eaf3;
+    font-size:16px;
+    line-height:1.9;
 }
 
-.pink {
-    color: #ff9dd1;
-    font-weight: bold;
+.pink{
+    color:#ff9dd1;
+    font-weight:bold;
 }
 
-.divider {
-    width: 80px;
-    height: 2px;
-    margin: 25px auto;
-    background: linear-gradient(
+.divider{
+    width:80px;
+    height:2px;
+    margin:25px auto;
+
+    background:linear-gradient(
         90deg,
         transparent,
         #ff8bc9,
@@ -156,128 +154,133 @@ h1 {
     );
 }
 
-button {
-    margin-top: 28px;
-    padding: 15px 27px;
+button{
+    margin-top:28px;
+    padding:15px 27px;
 
-    border: none;
-    border-radius: 50px;
+    border:none;
+    border-radius:50px;
 
-    background: linear-gradient(
+    background:linear-gradient(
         135deg,
         #ff4fa3,
         #c52b91
     );
 
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
 
-    cursor: pointer;
+    cursor:pointer;
 
     box-shadow:
-        0 10px 30px rgba(255,79,163,.35);
+    0 10px 30px rgba(255,79,163,.35);
 
-    transition: .3s;
+    transition:.3s;
 }
 
-button:hover {
-    transform: translateY(-3px) scale(1.04);
+button:hover{
+    transform:translateY(-3px) scale(1.04);
 }
 
-.secret {
-    display: none;
+.secret{
+    display:none;
 
-    margin-top: 25px;
-    padding: 22px;
+    margin-top:25px;
+    padding:22px;
 
-    border-radius: 20px;
+    border-radius:20px;
 
-    background: rgba(255,255,255,.06);
-    border: 1px solid rgba(255,255,255,.1);
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
 
-    color: #ffe5f4;
-    font-size: 15px;
-    line-height: 1.8;
+    color:#ffe5f4;
+    font-size:15px;
+    line-height:1.8;
 
-    animation: secretIn .7s ease;
+    animation:secretIn .7s ease;
+
+    text-align:left;
+    white-space:normal;
 }
 
-@keyframes secretIn {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
+@keyframes secretIn{
+    from{
+        opacity:0;
+        transform:translateY(15px);
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    to{
+        opacity:1;
+        transform:translateY(0);
     }
 }
 
-.footer {
-    margin-top: 30px;
-    color: #bba8b8;
-    font-size: 12px;
+.footer{
+    margin-top:30px;
+    color:#bba8b8;
+    font-size:12px;
 }
 
-/* Floating hearts */
-.heart-float {
-    position: fixed;
-    bottom: -40px;
+.heart-float{
+    position:fixed;
+    bottom:-40px;
 
-    pointer-events: none;
-    z-index: 1;
+    pointer-events:none;
+    z-index:1;
 
-    animation: floatHeart linear forwards;
+    animation:floatHeart linear forwards;
 }
 
-@keyframes floatHeart {
-    0% {
+@keyframes floatHeart{
+    0%{
         transform:
-            translateY(0)
-            rotate(0deg)
-            scale(.8);
+        translateY(0)
+        rotate(0deg)
+        scale(.8);
 
-        opacity: 0;
+        opacity:0;
     }
 
-    15% {
-        opacity: .8;
+    15%{
+        opacity:.8;
     }
 
-    100% {
+    100%{
         transform:
-            translateY(-110vh)
-            rotate(360deg)
-            scale(1.2);
+        translateY(-110vh)
+        rotate(360deg)
+        scale(1.2);
 
-        opacity: 0;
+        opacity:0;
     }
 }
 
-/* Mobile */
-@media (max-width: 500px) {
+@media(max-width:500px){
 
-    .wrapper {
-        padding: 18px;
+    .wrapper{
+        padding:18px;
     }
 
-    .card {
-        padding: 35px 21px;
-        border-radius: 25px;
+    .card{
+        padding:35px 21px;
+        border-radius:25px;
     }
 
-    h1 {
-        font-size: 36px;
+    h1{
+        font-size:36px;
     }
 
-    .big-heart {
-        font-size: 60px;
+    .big-heart{
+        font-size:60px;
     }
 
-    .message {
-        font-size: 15px;
+    .message{
+        font-size:15px;
+    }
+
+    .secret{
+        font-size:14px;
     }
 }
 </style>
@@ -285,136 +288,229 @@ button:hover {
 
 <body>
 
-<!-- Background -->
 <div class="stars" id="stars"></div>
 
 <div class="wrapper">
 
-    <div class="card">
+<div class="card">
 
-        <div class="label">
-            A Little Message For You
-        </div>
+<div class="label">
+A Little Message For You
+</div>
 
-        <h1>
-            Happy<br>
-            Girlfriend Day ❤️
-        </h1>
+<h1>
+Happy<br>
+Girlfriend Day ❤️
+</h1>
 
-        <div class="big-heart">
-            💗
-        </div>
+<div class="big-heart">
+💗
+</div>
 
-        <div class="message">
+<div class="message">
 
-            Untuk seseorang yang mungkin tidak sadar
-            betapa berharganya dirinya...
+Untuk seseorang yang mungkin tidak sadar
+betapa berharganya dirinya...
 
-            <br><br>
+<br><br>
 
-            Terima kasih karena sudah hadir dan membawa
-            banyak warna ke dalam hari-hariku.
+Terima kasih karena sudah hadir dan membawa
+banyak warna ke dalam hari-hariku.
 
-            <br><br>
+<br><br>
 
-            Aku nggak selalu pandai mengungkapkan perasaan,
-            tapi aku ingin kamu tahu bahwa
-            <span class="pink">
-                kehadiranmu berarti.
-            </span>
+Aku nggak selalu pandai mengungkapkan perasaan,
+tapi aku ingin kamu tahu bahwa
+<span class="pink">
+kehadiranmu berarti.
+</span>
 
-            <br><br>
+<br><br>
 
-            Semoga kita selalu punya alasan untuk tersenyum,
-            cerita untuk dikenang, dan momen-momen kecil
-            yang suatu hari nanti akan kita rindukan.
+Semoga kita selalu punya alasan untuk tersenyum,
+cerita untuk dikenang, dan momen-momen kecil
+yang suatu hari nanti akan kita rindukan.
 
-        </div>
+</div>
 
-        <div class="divider"></div>
+<div class="divider"></div>
 
-        <button onclick="openMessage()">
-            💌 Buka Pesan Rahasia
-        </button>
+<button onclick="openMessage()">
+💌 Buka Pesan Rahasia
+</button>
 
-        <div class="secret" id="secret">
+<!-- PESAN RAHASIA BARU -->
 
-            Kalau suatu hari kamu merasa sendirian,
-            ingat bahwa ada seseorang yang senang
-            pernah mengenalmu.
+<div class="secret" id="secret">
 
-            <br><br>
+happyy girlfriendd dayy syiqaaa cantikk 🤍
 
-            Aku nggak bisa menjanjikan semuanya akan
-            selalu sempurna.
+<br><br>
 
-            Tapi aku berharap setiap momen yang kita punya
-            bisa menjadi cerita indah yang layak untuk
-            dikenang.
+makasiii udaaa sayanggg samaa aizz, makasihh selalu ada
+disaattt aizz butuhh. intinyaa aizzz bahagia banget bisa
+samaa syiqaaa walauu keadaan nyaa enggaa terlaluu
+memihakk kekitaa.
 
-            <br><br>
+<br><br>
 
-            <strong>
-                Happy Girlfriend Day, sayang. ❤️
-            </strong>
+kaloo gw bolee egoiss, gw mauu samaa luu terus.
+tapii gw jugaa sadarrr keadaan kitaa lagii beginii.
+tapii kayaa yangg gw bilangg terusss kitaa
+perjuanginn barengg” yaaa syiqaa.
 
-            <br><br>
+<br><br>
 
-            Jangan lupa tersenyum hari ini,
-            karena senyummu adalah salah satu hal
-            sederhana yang membuat dunia terasa lebih indah. 💗
+aizzz selaluu pengenn kitaa kayaa sebelumm nyaa
+bisaa ngobroll bisaa chetann lagii di wa.
 
-        </div>
+<br><br>
 
-        <div class="footer">
-            Made with ❤️ just for you
-        </div>
+aizz cumaa bisaa nikmatinn prosess nyaa dengann caraa
+ngejagaa hatii buatt satuu perempuann yangg aizz
+sayanggg bangett.
 
-    </div>
+<br><br>
 
+aizzz berharapp sabarrr nyaa kitaa bisaa berbuahh
+hasill yangg manisss yaa kayaa oranggg” teruss kitaa
+ancurinn tuhh kataa kataa
+
+<br><br>
+
+<strong>“WHEN YAH WHEN YAH”</strong>
+
+<br><br>
+
+HAHAHAHAHA 🤍😭
+
+<br><br>
+
+yangg haruss syiqaa ingett aizz benerr benerr
+sayanggg cintaa samaa syiqaa pendeqq tanpaa
+mengharapp apapunn darii syiqaaa.
+
+<br><br>
+
+inii gw nyampeinn nyaa darii perasaan dann gw jujurr.
+
+<br><br>
+
+maaaaff yaa kaloo kataa” nyaa simplee soall nyaa
+gamauu banyakk kataa kataa mauu nyaa buktii nyataa 😏
+
+<br><br>
+
+<div style="text-align:center;font-size:28px;">
+🫰🏼🤍🫰🏼
+</div>
+
+<br>
+
+<strong>happy girlfriend day sayang🤍</strong>
+
+<br><br>
+
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+happy girlfriend day sayang🤍<br>
+
+</div>
+
+<div class="footer">
+Made with ❤️ just for you
+</div>
+
+</div>
 </div>
 
 <script>
 
-/* Tombol pesan rahasia */
-function openMessage() {
+function openMessage(){
 
-    const message = document.getElementById("secret");
-    const button = document.querySelector("button");
+    const message =
+    document.getElementById("secret");
 
-    if (message.style.display === "block") {
+    const button =
+    document.querySelector("button");
+
+    if(message.style.display === "block"){
 
         message.style.display = "none";
-        button.innerHTML = "💌 Buka Pesan Rahasia";
 
-    } else {
+        button.innerHTML =
+        "💌 Buka Pesan Rahasia";
+
+    }else{
 
         message.style.display = "block";
-        button.innerHTML = "💗 Tutup Pesan";
+
+        button.innerHTML =
+        "💗 Tutup Pesan";
 
     }
 }
 
 
-/* Membuat bintang */
-function createStars() {
+/* Bintang */
 
-    const container = document.getElementById("stars");
+function createStars(){
 
-    for (let i = 0; i < 70; i++) {
+    const container =
+    document.getElementById("stars");
 
-        const star = document.createElement("div");
+    for(let i=0;i<70;i++){
 
-        star.className = "star";
+        const star =
+        document.createElement("div");
+
+        star.className="star";
 
         star.style.left =
-            Math.random() * 100 + "%";
+        Math.random()*100+"%";
 
         star.style.top =
-            Math.random() * 100 + "%";
+        Math.random()*100+"%";
 
         star.style.animationDelay =
-            Math.random() * 2 + "s";
+        Math.random()*2+"s";
 
         container.appendChild(star);
     }
@@ -423,15 +519,16 @@ function createStars() {
 createStars();
 
 
-/* Membuat hati melayang */
-function createHeart() {
+/* Hati melayang */
+
+function createHeart(){
 
     const heart =
-        document.createElement("div");
+    document.createElement("div");
 
-    heart.className = "heart-float";
+    heart.className="heart-float";
 
-    const emojis = [
+    const emojis=[
         "❤️",
         "💗",
         "💕",
@@ -441,31 +538,33 @@ function createHeart() {
     ];
 
     heart.innerHTML =
-        emojis[
-            Math.floor(
-                Math.random() * emojis.length
-            )
-        ];
+    emojis[
+        Math.floor(
+            Math.random()*emojis.length
+        )
+    ];
 
     heart.style.left =
-        Math.random() * 100 + "vw";
+    Math.random()*100+"vw";
 
     heart.style.fontSize =
-        (14 + Math.random() * 18) + "px";
+    (14+Math.random()*18)+"px";
 
     heart.style.animationDuration =
-        (5 + Math.random() * 5) + "s";
+    (5+Math.random()*5)+"s";
 
     document.body.appendChild(heart);
 
-    setTimeout(function() {
+    setTimeout(function(){
+
         heart.remove();
-    }, 10000);
+
+    },10000);
 }
 
-setInterval(createHeart, 700);
+setInterval(createHeart,700);
 
 </script>
 
 </body>
-  </html>
+</html>
