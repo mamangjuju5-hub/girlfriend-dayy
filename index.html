@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Girlfriend Day ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(circle at 20% 20%, #6d235f 0%, transparent 35%),
+        radial-gradient(circle at 80% 80%, #35145c 0%, transparent 35%),
+        linear-gradient(135deg, #120817, #210d29, #0b0610);
+}
+
+/* Background stars */
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    opacity: .7;
+    animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: .2; }
+    to { opacity: 1; }
+}
+
+/* Main */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.card {
+    width: 100%;
+    max-width: 520px;
+    padding: 42px 28px;
+    text-align: center;
+
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 30px;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.55),
+        inset 0 1px 1px rgba(255,255,255,.1);
+
+    animation: cardIn 1.2s ease;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes cardIn {
+    from {
+        opacity: 0;
+        transform: translateY(35px) scale(.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.label {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #ffb6dd;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 18px;
+    font-size: 43px;
+    line-height: 1.1;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #ff8bc9,
+        #ffffff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.big-heart {
+    font-size: 70px;
+    margin: 22px 0;
+
+    filter: drop-shadow(0 0 20px rgba(255,80,170,.5));
+
+    animation: heartbeat 1.4s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+.message {
+    color: #f8eaf3;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.pink {
+    color: #ff9dd1;
+    font-weight: bold;
+}
+
+.divider {
+    width: 80px;
+    height: 2px;
+    margin: 25px auto;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ff8bc9,
+        transparent
+    );
+}
+
+button {
+    margin-top: 28px;
+    padding: 15px 27px;
+
+    border: none;
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #ff4fa3,
+        #c52b91
+    );
+
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px rgba(255,79,163,.35);
+
+    transition: .3s;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.04);
+}
+
+.secret {
+    display: none;
+
+    margin-top: 25px;
+    padding: 22px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+
+    color: #ffe5f4;
+    font-size: 15px;
+    line-height: 1.8;
+
+    animation: secretIn .7s ease;
+}
+
+@keyframes secretIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer {
+    margin-top: 30px;
+    color: #bba8b8;
+    font-size: 12px;
+}
+
+/* Floating hearts */
+.heart-float {
+    position: fixed;
+    bottom: -40px;
+
+    pointer-events: none;
+    z-index: 1;
+
+    animation: floatHeart linear forwards;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform:
+            translateY(0)
+            rotate(0deg)
+            scale(.8);
+
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .8;
+    }
+
+    100% {
+        transform:
+            translateY(-110vh)
+            rotate(360deg)
+            scale(1.2);
+
+        opacity: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    .wrapper {
+        padding: 18px;
+    }
+
+    .card {
+        padding: 35px 21px;
+        border-radius: 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .big-heart {
+        font-size: 60px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background -->
+<div class="stars" id="stars"></div>
+
+<div class="wrapper">
+
+    <div class="card">
+
+        <div class="label">
+            A Little Message For You
+        </div>
+
+        <h1>
+            Happy<br>
+            Girlfriend Day ❤️
+        </h1>
+
+        <div class="big-heart">
+            💗
+        </div>
+
+        <div class="message">
+
+            Untuk seseorang yang mungkin tidak sadar
+            betapa berharganya dirinya...
+
+            <br><br>
+
+            Terima kasih karena sudah hadir dan membawa
+            banyak warna ke dalam hari-hariku.
+
+            <br><br>
+
+            Aku nggak selalu pandai mengungkapkan perasaan,
+            tapi aku ingin kamu tahu bahwa
+            <span class="pink">
+                kehadiranmu berarti.
+            </span>
+
+            <br><br>
+
+            Semoga kita selalu punya alasan untuk tersenyum,
+            cerita untuk dikenang, dan momen-momen kecil
+            yang suatu hari nanti akan kita rindukan.
+
+        </div>
+
+        <div class="divider"></div>
+
+        <button onclick="openMessage()">
+            💌 Buka Pesan Rahasia
+        </button>
+
+        <div class="secret" id="secret">
+
+            Kalau suatu hari kamu merasa sendirian,
+            ingat bahwa ada seseorang yang senang
+            pernah mengenalmu.
+
+            <br><br>
+
+            Aku nggak bisa menjanjikan semuanya akan
+            selalu sempurna.
+
+            Tapi aku berharap setiap momen yang kita punya
+            bisa menjadi cerita indah yang layak untuk
+            dikenang.
+
+            <br><br>
+
+            <strong>
+                Happy Girlfriend Day, sayang. ❤️
+            </strong>
+
+            <br><br>
+
+            Jangan lupa tersenyum hari ini,
+            karena senyummu adalah salah satu hal
+            sederhana yang membuat dunia terasa lebih indah. 💗
+
+        </div>
+
+        <div class="footer">
+            Made with ❤️ just for you
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+/* Tombol pesan rahasia */
+function openMessage() {
+
+    const message = document.getElementById("secret");
+    const button = document.querySelector("button");
+
+    if (message.style.display === "block") {
+
+        message.style.display = "none";
+        button.innerHTML = "💌 Buka Pesan Rahasia";
+
+    } else {
+
+        message.style.display = "block";
+        button.innerHTML = "💗 Tutup Pesan";
+
+    }
+}
+
+
+/* Membuat bintang */
+function createStars() {
+
+    const container = document.getElementById("stars");
+
+    for (let i = 0; i < 70; i++) {
+
+        const star = document.createElement("div");
+
+        star.className = "star";
+
+        star.style.left =
+            Math.random() * 100 + "%";
+
+        star.style.top =
+            Math.random() * 100 + "%";
+
+        star.style.animationDelay =
+            Math.random() * 2 + "s";
+
+        container.appendChild(star);
+    }
+}
+
+createStars();
+
+
+/* Membuat hati melayang */
+function createHeart() {
+
+    const heart =
+        document.createElement("div");
+
+    heart.className = "heart-float";
+
+    const emojis = [
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "💘",
+        "💓"
+    ];
+
+    heart.innerHTML =
+        emojis[
+            Math.floor(
+                Math.random() * emojis.length
+            )
+        ];
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (14 + Math.random() * 18) + "px";
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function() {
+        heart.remove();
+    }, 10000);
+}
+
+setInterval(createHeart, 700);
+
+</script>
+
+</body>
+  </html>
